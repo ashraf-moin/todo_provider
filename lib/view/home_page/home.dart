@@ -12,11 +12,18 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child:Column(
+        child: Column(
           children: [
-            Text("Home Page")
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(color: Colors.deepOrange),
+              ),
+            ),
+            Expanded(
+              child: Container(),
+            ),
           ],
-        ) ,
+        ),
       ),
     );
   }
