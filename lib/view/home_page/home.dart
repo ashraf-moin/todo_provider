@@ -16,10 +16,28 @@ class _HomePageState extends State<HomePage> {
           children: [
             Expanded(
               child: Container(
-                decoration: BoxDecoration(color: Colors.deepOrange),
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.deepOrange,
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(30),
+                    bottomRight: Radius.circular(30),
+                  ),
+                ),
+                child: Center(
+                  child: Text(
+                    "To Do List",
+                    style: TextStyle(
+                        fontSize: 35,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                    ),
+                  ),
+                ),
               ),
             ),
             Expanded(
+              flex: 4,
               child: Container(),
             ),
           ],
