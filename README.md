@@ -8,6 +8,7 @@ Welcome to this hands-on project where you'll master Provider state management w
 * Experience seamless state management with Provider, keeping your app data organized and reactive.
 * Explore best practices for structuring Flutter apps with Provider.
 * Learn how to manage app state effectively for a smooth user experience.
+* msh_checkbox: ^2.0.1 added for checkbox .
 
 **Getting Started:**
 

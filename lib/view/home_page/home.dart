@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:msh_checkbox/msh_checkbox.dart';
 import 'package:provider/provider.dart';
 import 'package:todo_provider/model/todo_model.dart';
 
@@ -90,7 +91,28 @@ class _HomePageState extends State<HomePage> {
               child: ListView.builder(
                 itemBuilder: (context, itemIndex) {
                   return ListTile(
-                    title: Text(provider.allTODOList[itemIndex].title),);
+                    onTap: () {
+                      provider
+                          .todoStatusChange(provider.allTODOList[itemIndex]);
+                    },
+                    leading: MSHCheckbox(
+                      size: 30,
+                      value: provider.allTODOList[itemIndex].isCompleted,
+                      colorConfig: MSHColorConfig.fromCheckedUncheckedDisabled(
+                        checkedColor: Colors.deepOrange,
+                      ),
+                      style: MSHCheckboxStyle.stroke,
+                      onChanged: (selected) {
+                        provider
+                            .todoStatusChange(provider.allTODOList[itemIndex]);
+                      },
+                    ),
+                    title: Text(
+                      provider.allTODOList[itemIndex].title,
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.normal),
+                    ),
+                  );
                 },
                 itemCount: provider.allTODOList.length,
               ),
