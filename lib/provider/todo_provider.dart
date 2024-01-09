@@ -14,11 +14,10 @@ class TodoProvider extends ChangeNotifier {
     notifyListeners(); // Notify listeners of list change
   }
 
-  void todoStatusChange(TODOModel todoModel){
+  void todoStatusChange(TODOModel todoModel) {
     final index = _todoList.indexOf(todoModel);
-    _todoList[index].toggleCompleted();
-    notifyListeners();
-
+      _todoList[index].toggleCompleted();
+      notifyListeners();// Notify listeners of list change
   }
 
   // Remove a todo item from the list

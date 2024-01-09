@@ -109,9 +109,18 @@ class _HomePageState extends State<HomePage> {
                     ),
                     title: Text(
                       provider.allTODOList[itemIndex].title,
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.normal),
+                      style: TextStyle(
+                          fontSize: 25,
+                          fontWeight: FontWeight.normal,
+                          decoration:
+                              provider.allTODOList[itemIndex].isCompleted ==
+                                      true
+                                  ? TextDecoration.lineThrough
+                                  : null),
                     ),
+                    trailing: IconButton(onPressed: (){
+                      provider.removeToDOList(provider.allTODOList[itemIndex]);
+                    }, icon: Icon(Icons.delete,color: Colors.red,) ),
                   );
                 },
                 itemCount: provider.allTODOList.length,
