@@ -2,6 +2,8 @@
 
 Welcome to this hands-on project where you'll master Provider state management while building a practical todo app in Flutter!
 
+Inspired by: https://www.youtube.com/watch?v=6r-L3dYfyQI&t=2s
+
 **Key Features:**
 
 * Create, read, update, and delete todo tasks with ease.
@@ -37,10 +39,10 @@ Feel free to contribute to this project by:
 * Creating pull requests with new features or bug fixes.
 * Sharing your insights and experiences with Provider.
 
-**Happy Learning and Todo-ing! **
+ **Happy Learning and Todo-ing! **
 
-**Additional Tips:**
+ **Screenshot**
 
-* Add screenshots or GIFs to showcase the app's features and UI.
-* Provide links to relevant documentation or tutorials for Provider.
-* Include a section on customization options for users to experiment with.
+<img src="Screenshots/Image01.jpg" alt="Image description" height="600">
+<img src="Screenshots/Image02.jpg" alt="Image description" height="600">
+<img src="Screenshots/Image03.jpg" alt="Image description" height="600">
